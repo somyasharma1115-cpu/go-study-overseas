@@ -1,0 +1,910 @@
+[
+  {
+    "slug": "italy",
+    "name": "Italy",
+    "menuNote": "Affordable tuition and strong scholarships",
+    "heroTag": "Scholarship hotspot",
+    "heroSummary": "Public universities, regional scholarships, low living costs, and English-taught programmes make Italy our flagship destination.",
+    "heroStats": [
+      { "label": "Typical tuition", "value": "€500-€3,000/year" },
+      { "label": "Popular intake", "value": "Sep / Oct" },
+      { "label": "Best for", "value": "STEM, design, business" }
+    ],
+    "highlights": [
+      {
+        "title": "Free education pathways",
+        "body": "Public universities can make higher education feel much more accessible for international students."
+      },
+      {
+        "title": "Guaranteed scholarships up to €8,000",
+        "body": "Regional scholarships like DSU can dramatically reduce costs and make the ROI much easier to manage."
+      },
+      {
+        "title": "English-taught and Europe-connected",
+        "body": "A wide range of English-taught programmes and Schengen travel access make the student experience especially attractive."
+      }
+    ],
+    "universities": [
+      { "name": "Sapienza University of Rome", "program": "UG / PG Programs", "tag": "Public", "logo": "" },
+      { "name": "University of Bologna", "program": "UG / PG Programs", "tag": "Public", "logo": "" },
+      { "name": "Politecnico di Milano", "program": "UG / PG Programs", "tag": "STEM", "logo": "" },
+      { "name": "University of Milan", "program": "UG / PG Programs", "tag": "Public", "logo": "" },
+      { "name": "University of Padua", "program": "UG / PG Programs", "tag": "Public", "logo": "" },
+      { "name": "Politecnico di Torino", "program": "UG / PG Programs", "tag": "STEM", "logo": "" },
+      { "name": "University of Pisa", "program": "UG / PG Programs", "tag": "Public", "logo": "" },
+      { "name": "University of Naples Federico II", "program": "UG / PG Programs", "tag": "Public", "logo": "" },
+      { "name": "University of Florence", "program": "UG / PG Programs", "tag": "Public", "logo": "" },
+      { "name": "University of Turin", "program": "UG / PG Programs", "tag": "Public", "logo": "" },
+      { "name": "University of Siena", "program": "UG / PG Programs", "tag": "Public", "logo": "" },
+      { "name": "University of Trento", "program": "UG / PG Programs", "tag": "Public", "logo": "" },
+      { "name": "University of Genoa", "program": "UG / PG Programs", "tag": "Public", "logo": "" },
+      { "name": "University of Palermo", "program": "UG / PG Programs", "tag": "Public", "logo": "" },
+      { "name": "University of Messina", "program": "UG / PG Programs", "tag": "Public", "logo": "" },
+      { "name": "University of Parma", "program": "UG / PG Programs", "tag": "Public", "logo": "" },
+      { "name": "University of Cassino & Southern Lazio", "program": "UG / PG Programs", "tag": "Public", "logo": "" },
+      { "name": "University of Macerata", "program": "UG / PG Programs", "tag": "Public", "logo": "" },
+      { "name": "University of Camerino", "program": "UG / PG Programs", "tag": "Public", "logo": "" },
+      { "name": "University of Trieste", "program": "UG / PG Programs", "tag": "Public", "logo": "" },
+      { "name": "University of Calabria", "program": "UG / PG Programs", "tag": "Public", "logo": "" },
+      { "name": "University of Catania", "program": "UG / PG Programs", "tag": "Public", "logo": "" },
+      { "name": "University of Sassari", "program": "UG / PG Programs", "tag": "Public", "logo": "" },
+      { "name": "University of Tuscia", "program": "UG / PG Programs", "tag": "Public", "logo": "" }
+    ],
+    "costs": [
+      { "label": "Tuition", "value": "€500-€3,000/year" },
+      { "label": "Living budget", "value": "€500-€700/month" },
+      { "label": "Scholarships", "value": "DSU + up to €8,000/year" },
+      { "label": "Visa window", "value": "3-5 weeks" }
+    ],
+    "timeline": [
+      { "label": "Applications open", "value": "November to May" },
+      { "label": "Main intake", "value": "September / October" },
+      { "label": "Extra intake", "value": "February where available" }
+    ],
+    "requirements": [
+      "Bachelor's degree or final-year equivalent",
+      "Academic transcripts, SOP, and LORs",
+      "English proficiency proof where required",
+      "Financial documents for the visa stage"
+    ],
+    "scholarships": [
+      "DSU Scholarship",
+      "Regional Scholarships (Lazio Disco, EDISU Piemonte, DSU Toscana, Veneto)",
+      "University-Specific Scholarships",
+      "Italian Government Scholarship",
+      "Invest Your Talent in Italy (IYT)"
+    ],
+    "faqs": [
+      {
+        "q": "How does the scholarship work?",
+        "a": "All our students are eligible for the Regional Government Scholarship, which offers a 100% tuition fee waiver and a stipend for living expenses. It can make studying in Italy possible with no tuition fees and financial support for your stay."
+      },
+      {
+        "q": "Do I need to meet any specific academic requirements?",
+        "a": "Yes. For courses in Italian public universities, you generally need at least 60% marks in your previous education to be eligible for most programs."
+      },
+      {
+        "q": "Is the IMAT exam required for MBBS programs?",
+        "a": "Yes. The IMAT (International Medical Admissions Test) is compulsory for students applying to MBBS programs in Italy, and it must be taken before applying to medical schools."
+      },
+      {
+        "q": "Are the courses taught in English?",
+        "a": "Yes. The Italian public universities we apply to offer programs in English, whether you are applying for a bachelor's or master's degree."
+      },
+      {
+        "q": "How does Go Study Overseas choose the universities for me?",
+        "a": "We shortlist Italian public universities based on your academic profile, career goals, preferences, preferred course, and location so the final choice aligns with your aspirations."
+      },
+      {
+        "q": "What is included in the INR 1.4 lakh fee?",
+        "a": "The package covers university applications for 4 to 5 choices, pre-enrollment assistance, scholarship application support, visa guidance, and pre-departure support. It does not include visa proof-of-funds, DOV charges, travel insurance, IELTS or other exam fees, or the VFS visa fee."
+      },
+      {
+        "q": "What documents are needed for the visa application?",
+        "a": "You will need proof of financial funds for your stay in Italy, along with a valid passport, university admission letter, proof of scholarship, proof of funds, health insurance, and the visa application fee paid to VFS Global."
+      },
+      {
+        "q": "Can I apply for both bachelor’s and master’s programs through Go Study Overseas?",
+        "a": "Yes. We assist students with both bachelor's and master's programmes, whether they are starting their higher education journey or continuing at postgraduate level."
+      },
+      {
+        "q": "What happens if I am not eligible for the scholarship?",
+        "a": "If any eligibility issue comes up, our team helps resolve it or explores alternative solutions so you can still pursue financial support wherever possible."
+      },
+      {
+        "q": "Do you provide post-arrival services in Italy?",
+        "a": "Our primary services focus on the application, scholarship, and visa process, but we also provide pre-departure assistance for accommodation, bank accounts, the residence permit, tax code, and cultural orientation. We do not provide direct on-ground post-arrival services in Italy."
+      },
+      {
+        "q": "How long does the entire application process take?",
+        "a": "The full process, including application submission, scholarship assistance, and visa processing, generally takes around 6 to 8 months, so it is best to start early."
+      },
+      {
+        "q": "When can I apply for the September intake?",
+        "a": "Preparations for the September intake are already underway. Deadlines vary by university, so the safest approach is to apply as early as possible to keep the process smooth."
+      },
+      {
+        "q": "Do I need to learn Italian to study in Italy?",
+        "a": "No. The programs we assist with are taught in English, though learning some basic Italian can help with daily life and make the experience easier."
+      },
+      {
+        "q": "Can I work while studying in Italy?",
+        "a": "Yes. International students can usually work up to 20 hours per week during the academic year and full-time during breaks, provided they have the necessary student visa."
+      },
+      {
+        "q": "What are the advantages of studying in Italy?",
+        "a": "Italy offers high-quality education in world-renowned universities, strong scholarship support, English-taught options, rich cultural experiences, excellent healthcare, vibrant student life, low living costs compared with many European destinations, part-time work opportunities, a 1-year post-study visa route, and Schengen travel access."
+      }
+    ]
+  },
+  {
+    "slug": "germany",
+    "name": "Germany",
+    "menuNote": "Public universities and low tuition",
+    "heroTag": "Value with depth",
+    "heroSummary": "Public universities, solid industry links, and globally respected technical programs make Germany a smart pick.",
+    "heroStats": [
+      { "label": "Typical tuition", "value": "Low or zero at public universities" },
+      { "label": "Popular intake", "value": "Winter / Summer" },
+      { "label": "Best for", "value": "Engineering, robotics, applied sciences" }
+    ],
+    "highlights": [
+      {
+        "title": "A strong public university system",
+        "body": "Germany is known for accessible public education and a practical approach to technical and research degrees."
+      },
+      {
+        "title": "Industry-ready outcomes",
+        "body": "Its ecosystem is built around internships, labs, apprenticeships, and direct links to major employers."
+      },
+      {
+        "title": "A great fit for technical profiles",
+        "body": "If your background is in engineering, computer science, or manufacturing, the fit can be exceptionally strong."
+      }
+    ],
+    "universities": [
+      {
+        "name": "Technical University of Munich",
+        "program": "MSc in Robotics, Cognition, Intelligence",
+        "tag": "STEM",
+        "logo": "https://logo.clearbit.com/tum.de"
+      },
+      {
+        "name": "RWTH Aachen",
+        "program": "MSc in Mechanical Engineering",
+        "tag": "Engineering",
+        "logo": "https://logo.clearbit.com/rwth-aachen.de"
+      },
+      {
+        "name": "LMU Munich",
+        "program": "MSc in Management and Strategy",
+        "tag": "Business",
+        "logo": "https://logo.clearbit.com/lmu.de"
+      },
+      {
+        "name": "University of Heidelberg",
+        "program": "MSc in Molecular Biotechnology",
+        "tag": "Research",
+        "logo": "https://logo.clearbit.com/uni-heidelberg.de"
+      },
+      {
+        "name": "Schiller University",
+        "program": "UG / PG Programs",
+        "tag": "International",
+        "logo": "https://logo.clearbit.com/schiller.edu"
+      },
+      {
+        "name": "Constructor University Bremen",
+        "program": "UG / PG Programs",
+        "tag": "Research",
+        "logo": "https://logo.clearbit.com/constructor.university"
+      },
+      {
+        "name": "Steinbeis University Berlin",
+        "program": "Project-based UG / PG",
+        "tag": "Applied",
+        "logo": "https://logo.clearbit.com/steinbeis-hochschule.de"
+      },
+      {
+        "name": "SRH University",
+        "program": "UG / PG Programs",
+        "tag": "Practice-based",
+        "logo": "https://logo.clearbit.com/srh-university.de"
+      },
+      {
+        "name": "Hamburg University of Technology (TUHH)",
+        "program": "Engineering & MSc Programs",
+        "tag": "Engineering",
+        "logo": "https://logo.clearbit.com/tuhh.de"
+      },
+      {
+        "name": "FOM Hochschule",
+        "program": "Part-time UG / PG Programs",
+        "tag": "Professional",
+        "logo": "https://logo.clearbit.com/fom.de"
+      },
+      {
+        "name": "IU International University of Applied Sciences",
+        "program": "On-campus UG / PG Programs",
+        "tag": "Flexible",
+        "logo": "https://logo.clearbit.com/iu.org"
+      },
+      {
+        "name": "Arden University Berlin",
+        "program": "Bachelor's / Master's / MBA",
+        "tag": "Career-focused",
+        "logo": "https://logo.clearbit.com/arden.ac.uk"
+      },
+      {
+        "name": "GISMA University of Applied Sciences",
+        "program": "Business, Tech & MBA",
+        "tag": "Business",
+        "logo": "https://logo.clearbit.com/gisma.com"
+      }
+    ],
+    "costs": [
+      { "label": "Tuition", "value": "Often very low at public universities" },
+      { "label": "Living budget", "value": "€850-€1,100/month" },
+      { "label": "Scholarships", "value": "Merit + institutional support" },
+      { "label": "Visa window", "value": "6-12 weeks" }
+    ],
+    "timeline": [
+      { "label": "Applications open", "value": "October to April" },
+      { "label": "Main intake", "value": "Winter semester" },
+      { "label": "Extra intake", "value": "Summer semester where available" }
+    ],
+    "requirements": [
+      "Degree with relevant academic background",
+      "Motivation letter and supporting documents",
+      "English language proof for taught programs",
+      "Proof of funds for the blocked account stage"
+    ],
+    "scholarships": [
+      "DAAD Scholarship",
+      "Public Universities (Tuition-Free Education)",
+      "Deutschlandstipendium",
+      "Erasmus+ Scholarship",
+      "Heinrich Boll Foundation Scholarship",
+      "Konrad-Adenauer-Stiftung (KAS) Scholarship",
+      "Friedrich Ebert Stiftung Scholarship"
+    ],
+    "faqs": [
+      {
+        "q": "Are public universities really low cost?",
+        "a": "In many cases, yes. Tuition can be very low compared with other destinations, though living costs still need to be budgeted properly."
+      },
+      {
+        "q": "Do I need German for masters?",
+        "a": "Not always. There are many English-taught master's programs, especially in engineering, STEM, and business."
+      },
+      {
+        "q": "What makes Germany attractive beyond cost?",
+        "a": "Its combination of academic credibility, internship culture, and strong employment prospects after graduation is a major draw."
+      }
+    ]
+  },
+  {
+    "slug": "france",
+    "name": "France",
+    "menuNote": "Business, luxury, and policy programmes",
+    "heroTag": "Elegant and globally connected",
+    "heroSummary": "France blends strong institutions, cosmopolitan cities, and a wide range of business and policy programmes.",
+    "heroStats": [
+      { "label": "Typical tuition", "value": "Moderate to premium" },
+      { "label": "Popular intake", "value": "Sep / Jan" },
+      { "label": "Best for", "value": "Business, luxury, policy" }
+    ],
+    "highlights": [
+      {
+        "title": "Brand-heavy education",
+        "body": "French universities and grandes écoles can add serious weight to a CV, especially in business and management."
+      },
+      {
+        "title": "A polished international experience",
+        "body": "The country is a strong choice for students looking for a global classroom with a vibrant city lifestyle."
+      },
+      {
+        "title": "Career-facing programmes",
+        "body": "Many courses are designed with placement, project work, and industry partnerships in mind."
+      }
+    ],
+    "universities": [
+      {
+        "name": "Sciences Po",
+        "program": "Master in International Affairs",
+        "tag": "Policy",
+        "logo": "https://logo.clearbit.com/sciencespo.fr"
+      },
+      {
+        "name": "HEC Paris",
+        "program": "Master in Management",
+        "tag": "MBA",
+        "logo": "https://logo.clearbit.com/hec.edu"
+      },
+      {
+        "name": "ESSEC Business School",
+        "program": "MSc in Marketing Management",
+        "tag": "Business",
+        "logo": "https://logo.clearbit.com/essec.edu"
+      },
+      {
+        "name": "KEDGE Business School",
+        "program": "MSc in Supply Chain Management",
+        "tag": "SCM",
+        "logo": "https://logo.clearbit.com/kedge.edu"
+      }
+    ],
+    "costs": [
+      { "label": "Tuition", "value": "Varies by institution and programme" },
+      { "label": "Living budget", "value": "€900-€1,250/month" },
+      { "label": "Scholarships", "value": "Merit, school, and external aid" },
+      { "label": "Visa window", "value": "4-8 weeks" }
+    ],
+    "timeline": [
+      { "label": "Applications open", "value": "September to May" },
+      { "label": "Main intake", "value": "September" },
+      { "label": "Extra intake", "value": "January at select schools" }
+    ],
+    "requirements": [
+      "Relevant bachelor's degree or equivalent",
+      "Academic records and statement of purpose",
+      "English proficiency proof for international programmes",
+      "Financial documents and visa paperwork"
+    ],
+    "scholarships": [
+      "Eiffel Excellence Scholarship",
+      "France Government (BGF) Scholarships",
+      "Erasmus+ Scholarship",
+      "University-Specific Scholarships",
+      "Charpak Scholarship (For Indian Students)",
+      "Regional Scholarships (French Regions)"
+    ],
+    "faqs": [
+      {
+        "q": "Is France only for luxury or business students?",
+        "a": "Not at all. Those are popular options, but there are also strong pathways in policy, engineering, design, and hospitality."
+      },
+      {
+        "q": "Can I study in English?",
+        "a": "Yes. Many schools offer English-taught programmes, especially at postgraduate level."
+      },
+      {
+        "q": "How competitive are top schools?",
+        "a": "Highly competitive. We help position your application with the right story, documents, and shortlisting strategy."
+      }
+    ]
+  },
+  {
+    "slug": "uk",
+    "name": "United Kingdom",
+    "menuNote": "Russell Group and one-year masters",
+    "heroTag": "Fast-track and globally recognized",
+    "heroSummary": "Shorter master's degrees, major universities, and a strong global reputation make the UK a classic study destination.",
+    "heroStats": [
+      { "label": "Typical tuition", "value": "Premium" },
+      { "label": "Popular intake", "value": "Sep / Jan" },
+      { "label": "Best for", "value": "Business, STEM, law, humanities" }
+    ],
+    "highlights": [
+      {
+        "title": "One-year master's advantage",
+        "body": "Many programmes are shorter than elsewhere, which can reduce your total time away from the workforce."
+      },
+      {
+        "title": "Brand recognition worldwide",
+        "body": "UK universities are known globally and can be especially valuable for students aiming at international careers."
+      },
+      {
+        "title": "Huge variety of courses",
+        "body": "From niche master's tracks to large research universities, the UK has a broad academic menu."
+      }
+    ],
+    "universities": [
+      {
+        "name": "Imperial College London",
+        "program": "MSc in Computing",
+        "tag": "STEM",
+        "logo": "https://logo.clearbit.com/imperial.ac.uk"
+      },
+      {
+        "name": "King's College London",
+        "program": "MSc in International Management",
+        "tag": "Business",
+        "logo": "https://logo.clearbit.com/kcl.ac.uk"
+      },
+      {
+        "name": "University of Manchester",
+        "program": "MSc in Business Analytics",
+        "tag": "Analytics",
+        "logo": "https://logo.clearbit.com/manchester.ac.uk"
+      },
+      {
+        "name": "University of Birmingham",
+        "program": "MSc in Mechanical Engineering",
+        "tag": "Engineering",
+        "logo": "https://logo.clearbit.com/bham.ac.uk"
+      },
+      {
+        "name": "University of Hertfordshire",
+        "program": "UG / PG Programs",
+        "tag": "Career-focused",
+        "logo": "https://logo.clearbit.com/herts.ac.uk"
+      }
+    ],
+    "costs": [
+      { "label": "Tuition", "value": "Premium, programme dependent" },
+      { "label": "Living budget", "value": "£1,000-£1,500/month" },
+      { "label": "Scholarships", "value": "Merit, country, and school awards" },
+      { "label": "Visa window", "value": "3-6 weeks" }
+    ],
+    "timeline": [
+      { "label": "Applications open", "value": "September onwards" },
+      { "label": "Main intake", "value": "September" },
+      { "label": "Extra intake", "value": "January" }
+    ],
+    "requirements": [
+      "Relevant degree or final-year equivalent",
+      "Academic references and personal statement",
+      "English language score as required",
+      "Financial documents for the visa process"
+    ],
+    "scholarships": [
+      "Chevening Scholarship",
+      "Commonwealth Scholarship",
+      "GREAT Scholarship",
+      "University-Specific Scholarships",
+      "Scotland Saltire Scholarship",
+      "Rhodes Scholarship (Oxford)"
+    ],
+    "faqs": [
+      {
+        "q": "Why do students choose the UK for masters?",
+        "a": "The shorter course duration, strong brand value, and wide choice of programmes make it a powerful option."
+      },
+      {
+        "q": "Are scholarships available?",
+        "a": "Yes. Scholarships vary by university and profile, and we help identify where you have the strongest shot."
+      },
+      {
+        "q": "How much time should I allow for the process?",
+        "a": "A good plan gives you enough room for applications, funding documents, and the visa timeline without rushing."
+      }
+    ]
+  },
+  {
+    "slug": "canada",
+    "name": "Canada",
+    "menuNote": "PR-friendly study and work pathways",
+    "heroTag": "Future-oriented and practical",
+    "heroSummary": "Canada is a strong choice for students looking for quality education, work opportunities, and long-term migration pathways.",
+    "heroStats": [
+      { "label": "Typical tuition", "value": "Moderate to premium" },
+      { "label": "Popular intake", "value": "Sep / Jan / May" },
+      { "label": "Best for", "value": "STEM, business, co-op" }
+    ],
+    "highlights": [
+      {
+        "title": "Co-op and work options",
+        "body": "Many programmes include practical experience, which helps students build a stronger post-study profile."
+      },
+      {
+        "title": "Clear long-term pathway",
+        "body": "For many students, Canada stands out because study, work, and migration pathways are easier to plan around."
+      },
+      {
+        "title": "A balanced student experience",
+        "body": "The mix of academics, quality of life, and career opportunities is a big part of the appeal."
+      }
+    ],
+    "universities": [
+      {
+        "name": "University of Toronto",
+        "program": "MSc in Applied Computing",
+        "tag": "STEM",
+        "logo": "https://logo.clearbit.com/utoronto.ca"
+      },
+      {
+        "name": "University of British Columbia",
+        "program": "Master of Business Administration",
+        "tag": "MBA",
+        "logo": "https://logo.clearbit.com/ubc.ca"
+      },
+      {
+        "name": "McGill University",
+        "program": "MSc in Data Science",
+        "tag": "Data",
+        "logo": "https://logo.clearbit.com/mcgill.ca"
+      },
+      {
+        "name": "University of Waterloo",
+        "program": "MMath in Computer Science",
+        "tag": "Co-op",
+        "logo": "https://logo.clearbit.com/uwaterloo.ca"
+      }
+    ],
+    "costs": [
+      { "label": "Tuition", "value": "Programme and university dependent" },
+      { "label": "Living budget", "value": "CAD 1,200-1,800/month" },
+      { "label": "Scholarships", "value": "Merit and research aid" },
+      { "label": "Visa window", "value": "4-8 weeks" }
+    ],
+    "timeline": [
+      { "label": "Applications open", "value": "9-12 months ahead" },
+      { "label": "Main intake", "value": "September" },
+      { "label": "Extra intakes", "value": "January and May where available" }
+    ],
+    "requirements": [
+      "Degree relevant to your chosen programme",
+      "Academic transcripts and supporting essays",
+      "English proficiency proof for most institutions",
+      "Funds for tuition and living costs"
+    ],
+    "scholarships": [
+      "Vanier Canada Graduate Scholarship",
+      "Ontario Graduate Scholarship (OGS)",
+      "University-Specific Scholarships",
+      "Lester B. Pearson Scholarship",
+      "Canada-ASEAN Scholarships",
+      "Mitacs Globalink",
+      "Provincial and College Scholarships"
+    ],
+    "faqs": [
+      {
+        "q": "Is Canada a good option for long-term planning?",
+        "a": "It can be. Many students like the combination of education, work opportunities, and future pathway planning."
+      },
+      {
+        "q": "Do co-op programmes matter?",
+        "a": "Yes. They can make a huge difference if you're focused on employability and practical experience."
+      },
+      {
+        "q": "Can I study multiple intakes?",
+        "a": "Many universities offer more than one intake, but your profile and target programme will determine the best option."
+      }
+    ]
+  },
+  {
+    "slug": "usa",
+    "name": "USA",
+    "menuNote": "Research, flexibility, and wide choice",
+    "heroTag": "Large ecosystem, endless options",
+    "heroSummary": "The USA offers unmatched variety, a strong research culture, and huge flexibility across universities and programmes.",
+    "heroStats": [
+      { "label": "Typical tuition", "value": "Premium" },
+      { "label": "Popular intake", "value": "Aug / Jan" },
+      { "label": "Best for", "value": "Research, STEM, liberal arts" }
+    ],
+    "highlights": [
+      {
+        "title": "An enormous choice set",
+        "body": "The US is unmatched for the sheer number of universities, specialisations, and research possibilities."
+      },
+      {
+        "title": "Strong for research profiles",
+        "body": "If you want laboratory work, publications, or technical depth, the US can be a very strong fit."
+      },
+      {
+        "title": "Flexibility across career paths",
+        "body": "Students often like the ability to mix majors, electives, and internships in a very customised way."
+      }
+    ],
+    "universities": [
+      {
+        "name": "Northeastern University",
+        "program": "MPS in Informatics",
+        "tag": "STEM",
+        "logo": "https://logo.clearbit.com/northeastern.edu"
+      },
+      {
+        "name": "Drexel University",
+        "program": "MS in Robotics and Autonomous Systems",
+        "tag": "Engineering",
+        "logo": "https://logo.clearbit.com/drexel.edu"
+      },
+      {
+        "name": "University of Southern California",
+        "program": "MS in Computer Science",
+        "tag": "Research",
+        "logo": "https://logo.clearbit.com/usc.edu"
+      },
+      {
+        "name": "Arizona State University",
+        "program": "MBA",
+        "tag": "Business",
+        "logo": "https://logo.clearbit.com/asu.edu"
+      }
+    ],
+    "costs": [
+      { "label": "Tuition", "value": "Premium, university dependent" },
+      { "label": "Living budget", "value": "USD 1,200-2,000/month" },
+      { "label": "Scholarships", "value": "Merit and assistantships" },
+      { "label": "Visa window", "value": "2-8 weeks after approval" }
+    ],
+    "timeline": [
+      { "label": "Applications open", "value": "8-12 months ahead" },
+      { "label": "Main intake", "value": "August / September" },
+      { "label": "Extra intake", "value": "January" }
+    ],
+    "requirements": [
+      "Strong academic profile and transcripts",
+      "Statement of purpose and recommendations",
+      "Standardised or English test scores where required",
+      "Financial documents for admission and visa filing"
+    ],
+    "scholarships": [
+      "Fulbright Scholarship",
+      "University Scholarships",
+      "Need-Based Scholarships",
+      "Merit-Based Scholarships",
+      "Assistantships (RA / TA)",
+      "Ivy League Financial Aid"
+    ],
+    "faqs": [
+      {
+        "q": "Is the US only for top-ranked applicants?",
+        "a": "No. There are a huge range of universities, and the right fit depends on your budget, goals, and academic background."
+      },
+      {
+        "q": "Do assistantships matter?",
+        "a": "They can make a huge difference in funding and experience if your programme offers them."
+      },
+      {
+        "q": "When should I start?",
+        "a": "Early planning helps, especially if you need tests, funding documentation, and a balanced list of universities."
+      }
+    ]
+  },
+  {
+    "slug": "australia",
+    "name": "Australia",
+    "menuNote": "Group of Eight and flexible intakes",
+    "heroTag": "Sunny, practical, and popular",
+    "heroSummary": "Australia combines globally ranked universities, a friendly student culture, and a flexible intake calendar.",
+    "heroStats": [
+      { "label": "Typical tuition", "value": "Premium to moderate" },
+      { "label": "Popular intake", "value": "Feb / Jul / Nov" },
+      { "label": "Best for", "value": "Business, STEM, health, analytics" }
+    ],
+    "highlights": [
+      {
+        "title": "Flexible intake options",
+        "body": "Multiple intake windows make it easier to align applications with your current academic timeline."
+      },
+      {
+        "title": "Strong campus culture",
+        "body": "Australia is known for being student-friendly, practical, and easy to settle into."
+      },
+      {
+        "title": "Great for work-study balance",
+        "body": "A lot of students like the balance of academic quality and part-time work opportunities."
+      }
+    ],
+    "universities": [
+      {
+        "name": "University of Melbourne",
+        "program": "MSc in Information Systems",
+        "tag": "STEM",
+        "logo": "https://logo.clearbit.com/unimelb.edu.au"
+      },
+      {
+        "name": "UNSW Sydney",
+        "program": "Master of Business Analytics",
+        "tag": "Analytics",
+        "logo": "https://logo.clearbit.com/unsw.edu.au"
+      },
+      {
+        "name": "Monash University",
+        "program": "MSc in Engineering",
+        "tag": "Engineering",
+        "logo": "https://logo.clearbit.com/monash.edu"
+      },
+      {
+        "name": "University of Sydney",
+        "program": "MBA",
+        "tag": "MBA",
+        "logo": "https://logo.clearbit.com/sydney.edu.au"
+      }
+    ],
+    "costs": [
+      { "label": "Tuition", "value": "Moderate to premium" },
+      { "label": "Living budget", "value": "AUD 1,600-2,300/month" },
+      { "label": "Scholarships", "value": "Merit and faculty awards" },
+      { "label": "Visa window", "value": "2-6 weeks" }
+    ],
+    "timeline": [
+      { "label": "Applications open", "value": "Rolling through the year" },
+      { "label": "Main intake", "value": "February and July" },
+      { "label": "Extra intake", "value": "November where available" }
+    ],
+    "requirements": [
+      "Academic records and programme-specific documents",
+      "English language proof where required",
+      "Statement of purpose or application essay",
+      "Financial documents for visa readiness"
+    ],
+    "scholarships": [
+      "Australia Awards Scholarship",
+      "Destination Australia Scholarship",
+      "University-Specific Scholarships",
+      "Research Training Program (RTP)",
+      "Deakin Vice-Chancellor Scholarship",
+      "Macquarie University Scholarships",
+      "Griffith Remarkable Scholarship"
+    ],
+    "faqs": [
+      {
+        "q": "Is Australia a good fit for flexible planning?",
+        "a": "Yes. The intake calendar gives students more room to choose a timing that works for them."
+      },
+      {
+        "q": "Are scholarships available?",
+        "a": "Merit and faculty awards do exist, though they depend heavily on the university and your profile."
+      },
+      {
+        "q": "What makes Australia appealing?",
+        "a": "A strong academic brand, approachable student culture, and practical post-study options are the big draws."
+      }
+    ]
+  }
+  ,
+  {
+    "slug": "malta",
+    "name": "Malta",
+    "menuNote": "English-friendly island destination",
+    "heroTag": "EU study with an English-speaking edge",
+    "heroSummary": "GBS Malta brings a practical international study option in a compact, English-friendly European setting.",
+    "heroStats": [
+      { "label": "Typical tuition", "value": "Programme dependent" },
+      { "label": "Popular intake", "value": "Rolling / Autumn" },
+      { "label": "Best for", "value": "Business, management, international study" }
+    ],
+    "highlights": [
+      {
+        "title": "English widely used",
+        "body": "Malta is a natural fit for students who want a European base without a language barrier."
+      },
+      {
+        "title": "Compact and easy to settle into",
+        "body": "The island size keeps travel simple, and the student experience feels more manageable than a mega-city."
+      },
+      {
+        "title": "Internationally connected programs",
+        "body": "A practical option for students looking for applied, career-facing programmes."
+      }
+    ],
+    "universities": [
+      {
+        "name": "GBS Malta",
+        "program": "UG / PG Programs",
+        "tag": "Business",
+        "logo": "https://logo.clearbit.com/gbs.edu.mt"
+      }
+    ],
+    "costs": [
+      { "label": "Tuition", "value": "Programme dependent" },
+      { "label": "Living budget", "value": "€700-€1,100/month" },
+      { "label": "Scholarships", "value": "Institutional and partner support" },
+      { "label": "Visa window", "value": "4-8 weeks" }
+    ],
+    "timeline": [
+      { "label": "Applications open", "value": "Rolling" },
+      { "label": "Main intake", "value": "September / October" },
+      { "label": "Extra intake", "value": "Where available" }
+    ],
+    "requirements": [
+      "Relevant academic background",
+      "Transcripts, SOP, and supporting documents",
+      "English language proof where required",
+      "Financial documents for visa readiness"
+    ],
+    "scholarships": [
+      "Malta Government Scholarship Scheme",
+      "University of Malta Scholarships",
+      "Institutional Scholarships",
+      "Partner and Early-Bird Awards"
+    ],
+    "faqs": [
+      {
+        "q": "Is Malta a good fit for English-medium study?",
+        "a": "Yes. Malta is attractive because English is widely used in study and daily life."
+      },
+      {
+        "q": "What type of student is this destination best for?",
+        "a": "Students looking for an accessible European study environment with an international campus feel."
+      },
+      {
+        "q": "Can scholarships help reduce the total cost?",
+        "a": "Yes. Institutional and partner support can help make the budget much more manageable."
+      }
+    ]
+  },
+  {
+    "slug": "dubai",
+    "name": "Dubai",
+    "menuNote": "Global business hub with international campuses",
+    "heroTag": "Career-driven study in the UAE",
+    "heroSummary": "GBS Dubai offers an international, business-focused option in one of the region's fastest-growing education hubs.",
+    "heroStats": [
+      { "label": "Typical tuition", "value": "Programme dependent" },
+      { "label": "Popular intake", "value": "Multiple intakes" },
+      { "label": "Best for", "value": "Business, management, international exposure" }
+    ],
+    "highlights": [
+      {
+        "title": "Strong business and finance reputation",
+        "body": "Dubai is a practical choice for students focused on applied business education and regional opportunities."
+      },
+      {
+        "title": "International student ecosystem",
+        "body": "The city is built for global mobility, with campuses and employers that think internationally."
+      },
+      {
+        "title": "Fast-moving and career-oriented",
+        "body": "A strong fit for students who want a modern study destination with direct industry exposure."
+      }
+    ],
+    "universities": [
+      {
+        "name": "GBS Dubai",
+        "program": "UG / PG Programs",
+        "tag": "Business",
+        "logo": "https://logo.clearbit.com/gbs.ac.ae"
+      },
+      {
+        "name": "Middlesex University Dubai",
+        "program": "UG / PG Programs",
+        "tag": "UK campus",
+        "logo": "https://logo.clearbit.com/mdx.ac.ae"
+      },
+      {
+        "name": "Manipal Academy of Higher Education Dubai",
+        "program": "UG / PG Programs",
+        "tag": "Multidisciplinary",
+        "logo": "https://logo.clearbit.com/manipal.edu"
+      },
+      {
+        "name": "De Montfort University Dubai",
+        "program": "UG / PG Programs",
+        "tag": "Applied",
+        "logo": "https://logo.clearbit.com/dmu.ac.uk"
+      }
+    ],
+    "costs": [
+      { "label": "Tuition", "value": "Programme dependent" },
+      { "label": "Living budget", "value": "AED 3,500-7,500/month" },
+      { "label": "Scholarships", "value": "Early-bird and partner support" },
+      { "label": "Visa window", "value": "2-6 weeks" }
+    ],
+    "timeline": [
+      { "label": "Applications open", "value": "Rolling" },
+      { "label": "Main intake", "value": "Multiple intakes" },
+      { "label": "Extra intake", "value": "Where available" }
+    ],
+    "requirements": [
+      "Relevant academic background",
+      "Transcripts, SOP, and supporting documents",
+      "English language proof where required",
+      "Financial documents for visa readiness"
+    ],
+    "scholarships": [
+      "UAE Government Scholarships",
+      "Sports Scholarships",
+      "Early-Bird Awards",
+      "Partner Scholarships"
+    ],
+    "faqs": [
+      {
+        "q": "Why do students choose Dubai?",
+        "a": "It combines a global city experience with business-focused education and strong career visibility."
+      },
+      {
+        "q": "Is English enough for study?",
+        "a": "For many international programmes, yes. English is the main language used in academic settings."
+      },
+      {
+        "q": "Are scholarships possible?",
+        "a": "Yes. Early-bird and partner support can help reduce the overall fee burden."
+      }
+    ]
+  }
+]

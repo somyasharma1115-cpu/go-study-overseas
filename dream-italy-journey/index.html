@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Study abroad with top scholarships</title>
+    <meta name="description" content="Student-first study abroad consultancy for admissions, scholarships, and visa support across Italy, the UK, Germany, France, Canada, the USA, Australia, Malta, Dubai, and MBBS routes." />
+    <meta name="author" content="Go Study Overseas" />
+    <link rel="preload" as="image" href="/splash-logo.webp" fetchpriority="high" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600;9..144,700&family=Manrope:wght@400;500;600;700;800&family=Poppins:wght@400;500;600;700&display=swap"
+      media="print"
+      onload="this.media='all'"
+    />
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600;9..144,700&family=Manrope:wght@400;500;600;700;800&family=Poppins:wght@400;500;600;700&display=swap"
+      />
+    </noscript>
+
+    <meta property="og:title" content="Study abroad with top scholarships" />
+    <meta property="og:description" content="Student-first study abroad consultancy for admissions, scholarships, and visa support." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="/splash-logo.webp" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image" content="/splash-logo.webp" />
+    <style>
+      :root {
+        color-scheme: light;
+      }
+
+      body {
+        margin: 0;
+        background: #ffffff;
+        color: #10213d;
+      }
+
+      #app-bootstrap {
+        position: fixed;
+        inset: 0;
+        z-index: 9999;
+        display: grid;
+        place-items: center;
+        background:
+          radial-gradient(circle at top left, rgba(128, 214, 255, 0.18), transparent 34%),
+          radial-gradient(circle at bottom right, rgba(65, 121, 255, 0.14), transparent 34%),
+          #ffffff;
+        transition: opacity 260ms ease, visibility 260ms ease;
+      }
+
+      body.app-ready #app-bootstrap {
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+      }
+
+      .app-bootstrap__card {
+        width: min(18rem, calc(100vw - 2rem));
+        padding: 1.25rem 1rem;
+        border: 1px solid rgba(220, 228, 240, 0.8);
+        border-radius: 1.25rem;
+        background: rgba(255, 255, 255, 0.92);
+        box-shadow: 0 18px 48px -28px rgba(16, 33, 61, 0.26);
+        text-align: center;
+        backdrop-filter: blur(6px);
+      }
+
+      .app-bootstrap__logo {
+        display: block;
+        width: min(12rem, 60vw);
+        height: auto;
+        margin: 0 auto 0.875rem;
+      }
+
+      .app-bootstrap__status {
+        margin: 0 0 0.75rem;
+        font: 600 0.95rem/1.4 Manrope, system-ui, sans-serif;
+        letter-spacing: 0.03em;
+      }
+
+      .app-bootstrap__bar {
+        overflow: hidden;
+        height: 0.42rem;
+        border-radius: 999px;
+        background: rgba(203, 214, 230, 0.75);
+      }
+
+      .app-bootstrap__bar::after {
+        content: "";
+        display: block;
+        height: 100%;
+        width: 42%;
+        border-radius: inherit;
+        background: linear-gradient(90deg, #25a4dd 0%, #4582ff 100%);
+        animation: bootstrap-slide 1.2s ease-in-out infinite;
+      }
+
+      @keyframes bootstrap-slide {
+        0% {
+          transform: translateX(-110%);
+        }
+
+        100% {
+          transform: translateX(260%);
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="app-bootstrap" aria-hidden="true">
+      <div class="app-bootstrap__card">
+        <img src="/splash-logo.webp" alt="" class="app-bootstrap__logo" fetchpriority="high" />
+        <p class="app-bootstrap__status">Preparing your study abroad journey</p>
+        <div class="app-bootstrap__bar"></div>
+      </div>
+    </div>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

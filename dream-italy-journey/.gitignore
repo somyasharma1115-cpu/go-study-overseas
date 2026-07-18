@@ -1,0 +1,58 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Reference/source-material directories used outside the app build
+edu-mentor/
+medabroad/
+reviews/
+tmp/
+yourglobalmentor_university_pages/
+public/images/
+!src/assets/reviews/
+!src/assets/reviews/**
+src/assets/reviews/IMG_*.MOV
+src/assets/reviews/IMG_*.MP4
+
+# Local scratch exports
+About_figma_frame.pdf
+About_figma_frame.png
+Go Study Overseas - Website Structure - Main.csv
+Go Study Overseas - Website Structure.xlsx
+Go Study Overseas - Website Structure.zip
+Go Study Overseas - Website Structure/
+screencapture-edu-mentor-study-in-france-2026-05-04-14_12_42.pdf
+blue_clouds.png
+blue_clouds_full.png
+blue_clouds_full_2.png
+logo.jpg
+logo_final.png
+logo_no_bg.png
+
+# Finder/editor noise inside assets
+**/.DS_Store
+*.swp
+
+.image-backups/
+reference_pages/

@@ -1,0 +1,26 @@
+[
+  {
+    "id": "event-1-italy-application-sprint",
+    "eventNumber": 1,
+    "category": "Live",
+    "title": "Italy Application Sprint",
+    "date": "18 May 2026",
+    "time": "2:00 PM - 3:30 PM",
+    "location": "Live on Zoom",
+    "description": "A fast-paced live session covering documents, deadlines, and how to shortlist the best Italian universities.",
+    "cta": "Join live"
+  },
+  {
+    "id": "italy-webinar-road-map",
+    "eventNumber": 2,
+    "category": "Webinar",
+    "title": "Italy Webinar Road Map",
+    "date": "15 June 2026",
+    "time": "6:30 PM - 7:45 PM",
+    "location": "Online",
+    "description": "Join our expert-led webinar to map your journey to studying in Italy, from applications and scholarships to visas and arrival.",
+    "image": "/webinar1.jpeg",
+    "cta": "Book Your Seat Now",
+    "ctaLink": "https://login.funnelos.in/u/89747/italy-webinar-road-map"
+  }
+]
