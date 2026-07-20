@@ -28,6 +28,7 @@ const newsItems = newsImages.map((image, index) => ({
 
 export const News = () => {
   const [activeImage, setActiveImage] = useState<string | null>(null);
+  const [activeIndex, setActiveIndex] = useState(0);
   const [emblaRef, emblaApi] = useEmblaCarousel({
     loop: true,
     align: "start",
@@ -54,6 +55,18 @@ export const News = () => {
   }, [emblaApi]);
 
   useEffect(() => {
+    if (!emblaApi) return;
+    const onSelect = () => setActiveIndex(emblaApi.selectedScrollSnap());
+    emblaApi.on("select", onSelect);
+    emblaApi.on("reInit", onSelect);
+    onSelect();
+    return () => {
+      emblaApi.off("select", onSelect);
+      emblaApi.off("reInit", onSelect);
+    };
+  }, [emblaApi]);
+
+  useEffect(() => {
     if (!activeImage) return;
     const onKey = (e: KeyboardEvent) => {
       if (e.key === "Escape") setActiveImage(null);
@@ -73,7 +86,7 @@ export const News = () => {
       data-controlled-scroll
       className="scroll-reveal-section relative isolate flex min-h-[115svh] items-start overflow-hidden bg-fold-blue py-32 text-primary-foreground md:items-center md:py-40"
     >
-      <div data-panel-content className="container relative z-10 w-full">
+      <div data-panel-content className="container relative z-10 w-full px-4 md:px-8 lg:px-12">
         <div className="max-w-3xl">
           <p className="text-xs uppercase tracking-[0.3em] text-white/70">News</p>
           <h2 className="mt-4 font-display text-4xl md:text-6xl font-semibold text-white text-balance">
@@ -84,7 +97,7 @@ export const News = () => {
           </p>
         </div>
 
-        <div className="mx-auto mt-14 flex w-full max-w-6xl items-stretch overflow-hidden">
+        <div className="mt-14 flex w-full max-w-6xl items-stretch overflow-hidden pl-4 sm:pl-6 md:pl-8">
           <div ref={emblaRef} className="min-w-0 flex-1">
             <div className="-ml-6 flex">
               {newsItems.map((item, index) => (
@@ -115,6 +128,23 @@ export const News = () => {
               ))}
             </div>
           </div>
+        </div>
+
+        <div className="mt-8 flex items-center justify-center gap-2.5">
+          {newsItems.map((item, index) => (
+            <button
+              key={item.index}
+              type="button"
+              onClick={() => emblaApi?.scrollTo(index)}
+              aria-label={`Go to news ${index + 1}`}
+              aria-current={activeIndex === index}
+              className={`h-2.5 rounded-full transition-all duration-300 ${
+                activeIndex === index
+                  ? "w-7 bg-white"
+                  : "w-2.5 bg-white/35 hover:bg-white/60"
+              }`}
+            />
+          ))}
         </div>
       </div>
 
