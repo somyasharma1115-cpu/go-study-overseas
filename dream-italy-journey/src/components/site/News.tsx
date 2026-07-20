@@ -29,11 +29,29 @@ const newsItems = newsImages.map((image, index) => ({
 export const News = () => {
   const [activeImage, setActiveImage] = useState<string | null>(null);
   const [emblaRef, emblaApi] = useEmblaCarousel({
-    loop: false,
+    loop: true,
     align: "start",
-    dragFree: false,
+    dragFree: true,
     containScroll: "trimSnaps",
   });
+
+  useEffect(() => {
+    if (!emblaApi) return;
+    let dragging = false;
+    const onDown = () => { dragging = true; };
+    const onUp = () => { dragging = false; };
+    emblaApi.on("pointerDown", onDown);
+    emblaApi.on("pointerUp", onUp);
+
+    const id = window.setInterval(() => {
+      if (!dragging) emblaApi.scrollNext();
+    }, 2500);
+    return () => {
+      window.clearInterval(id);
+      emblaApi.off("pointerDown", onDown);
+      emblaApi.off("pointerUp", onUp);
+    };
+  }, [emblaApi]);
 
   useEffect(() => {
     if (!activeImage) return;
@@ -66,8 +84,8 @@ export const News = () => {
           </p>
         </div>
 
-        <div className="mx-auto mt-14 flex w-full max-w-6xl items-stretch">
-          <div ref={emblaRef} className="min-w-0 flex-1 overflow-hidden">
+        <div className="mx-auto mt-14 flex w-full max-w-6xl items-stretch overflow-hidden">
+          <div ref={emblaRef} className="min-w-0 flex-1">
             <div className="-ml-6 flex">
               {newsItems.map((item, index) => (
                 <article
