@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import news1 from "@/assets/news/news1.jpeg";
 import news2 from "@/assets/news/news2.jpeg";
 import news3 from "@/assets/news/news3.jpeg";
@@ -26,6 +26,106 @@ const newsItems = newsImages.map((image, index) => ({
 
 export const News = () => {
   const [activeImage, setActiveImage] = useState<string | null>(null);
+  const scrollerRef = useRef<HTMLDivElement | null>(null);
+  const drag = useRef({
+    active: false,
+    startX: 0,
+    startScroll: 0,
+    moved: false,
+    lastX: 0,
+    lastT: 0,
+    velocity: 0,
+    targetScroll: 0,
+  });
+  const momentum = useRef<number | null>(null);
+
+  const stopMomentum = () => {
+    if (momentum.current !== null) {
+      cancelAnimationFrame(momentum.current);
+      momentum.current = null;
+    }
+  };
+
+  const onPointerDown = (e: React.PointerEvent<HTMLDivElement>) => {
+    const el = scrollerRef.current;
+    if (!el) return;
+    stopMomentum();
+    const now = performance.now();
+    drag.current = {
+      active: true,
+      startX: e.clientX,
+      startScroll: el.scrollLeft,
+      moved: false,
+      lastX: e.clientX,
+      lastT: now,
+      velocity: 0,
+      targetScroll: el.scrollLeft,
+    };
+    momentum.current = requestAnimationFrame(animationLoop);
+    el.setPointerCapture(e.pointerId);
+  };
+
+  const onDragStart = (e: React.DragEvent) => {
+    e.preventDefault();
+  };
+
+  const animationLoop = () => {
+    const el = scrollerRef.current;
+    if (!el) {
+      momentum.current = null;
+      return;
+    }
+    if (drag.current.active) {
+      const next = el.scrollLeft + (drag.current.targetScroll - el.scrollLeft) * 0.45;
+      el.scrollLeft = next;
+      momentum.current = requestAnimationFrame(animationLoop);
+    } else {
+      let v = drag.current.velocity * 16;
+      if (Math.abs(v) < 0.4) {
+        momentum.current = null;
+        return;
+      }
+      const step = () => {
+        v *= 0.92;
+        el.scrollLeft -= v;
+        if (Math.abs(v) > 0.4) {
+          momentum.current = requestAnimationFrame(step);
+        } else {
+          momentum.current = null;
+        }
+      };
+      momentum.current = requestAnimationFrame(step);
+    }
+  };
+
+  const onPointerMove = (e: React.PointerEvent<HTMLDivElement>) => {
+    const el = scrollerRef.current;
+    if (!el || !drag.current.active) return;
+    const dx = e.clientX - drag.current.startX;
+    if (Math.abs(dx) > 4) drag.current.moved = true;
+    const now = performance.now();
+    const dt = now - drag.current.lastT;
+    if (dt > 0) {
+      const inst = (e.clientX - drag.current.lastX) / dt;
+      drag.current.velocity = drag.current.velocity * 0.8 + inst * 0.2;
+    }
+    drag.current.lastX = e.clientX;
+    drag.current.lastT = now;
+    drag.current.targetScroll = drag.current.startScroll - dx;
+  };
+
+  const endDrag = (e: React.PointerEvent<HTMLDivElement>) => {
+    const el = scrollerRef.current;
+    if (el && el.hasPointerCapture(e.pointerId)) el.releasePointerCapture(e.pointerId);
+    drag.current.active = false;
+  };
+
+  const onCardClick = (e: React.MouseEvent) => {
+    if (drag.current.moved) {
+      e.preventDefault();
+      e.stopPropagation();
+    }
+  };
 
   useEffect(() => {
     if (!activeImage) return;
@@ -58,27 +158,40 @@ export const News = () => {
           </p>
         </div>
 
-        <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <div
+          ref={scrollerRef}
+          onPointerDown={onPointerDown}
+          onPointerMove={onPointerMove}
+          onPointerUp={endDrag}
+          onPointerCancel={endDrag}
+          onDragStart={onDragStart}
+          className="mt-14 flex snap-x snap-proximity gap-6 overflow-x-auto overscroll-x-contain pb-4 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden cursor-grab touch-pan-x select-none active:cursor-grabbing"
+        >
           {newsItems.map((item, index) => (
             <article
               key={item.href ?? index}
-              className="group flex flex-col overflow-hidden rounded-[2rem] border border-white/15 bg-white/10 shadow-soft backdrop-blur-md transition-smooth hover:-translate-y-1 hover:shadow-elegant"
+              onClick={onCardClick}
+              className="group flex w-[26rem] shrink-0 snap-start flex-col overflow-hidden rounded-[2rem] border border-white/15 bg-white/10 shadow-soft backdrop-blur-md transition-smooth hover:-translate-y-1 hover:shadow-elegant sm:w-[34rem] md:w-[42rem]"
             >
               <button
                 type="button"
                 onClick={() => setActiveImage(item.image)}
                 aria-label={`Open news image ${item.index + 1}`}
-                className="relative aspect-[4/3] overflow-hidden border-b border-white/10 bg-black/5"
+                className="relative block w-full overflow-hidden aspect-square"
               >
                 <img
                   src={item.image}
                   alt={`News image ${item.index + 1}`}
                   loading="lazy"
-                  className="absolute inset-0 h-full w-full object-cover object-center transition-smooth group-hover:scale-105"
+                  draggable={false}
+                  className={
+                    "pointer-events-none block h-full w-full object-center transition-smooth group-hover:scale-105 " +
+                    "object-cover"
+                  }
                 />
               </button>
               {item.meta ? (
-                <div className="p-6">
+                <div className="px-4 py-3">
                   <p className="text-[10px] uppercase tracking-[0.24em] text-white/60">{item.meta}</p>
                 </div>
               ) : null}
