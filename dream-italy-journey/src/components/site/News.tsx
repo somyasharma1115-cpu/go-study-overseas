@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from "react";
+import "@/components/site/News.css";
 import news1 from "@/assets/news/news1.jpeg";
 import news2 from "@/assets/news/news2.jpeg";
 import news3 from "@/assets/news/news3.jpeg";
@@ -26,16 +27,17 @@ const newsItems = newsImages.map((image, index) => ({
 
 export const News = () => {
   const [activeImage, setActiveImage] = useState<string | null>(null);
+  const [isDragging, setIsDragging] = useState(false);
   const scrollerRef = useRef<HTMLDivElement | null>(null);
   const drag = useRef({
     active: false,
+    pointerId: -1,
     startX: 0,
     startScroll: 0,
     moved: false,
     lastX: 0,
     lastT: 0,
     velocity: 0,
-    targetScroll: 0,
   });
   const momentum = useRef<number | null>(null);
 
@@ -46,84 +48,77 @@ export const News = () => {
     }
   };
 
+  const clampScroll = (el: HTMLElement, value: number) =>
+    Math.max(0, Math.min(value, el.scrollWidth - el.clientWidth));
+
   const onPointerDown = (e: React.PointerEvent<HTMLDivElement>) => {
+    if (e.button !== 0 && e.pointerType === "mouse") return;
     const el = scrollerRef.current;
     if (!el) return;
     stopMomentum();
     const now = performance.now();
     drag.current = {
       active: true,
+      pointerId: e.pointerId,
       startX: e.clientX,
       startScroll: el.scrollLeft,
       moved: false,
       lastX: e.clientX,
       lastT: now,
       velocity: 0,
-      targetScroll: el.scrollLeft,
     };
-    momentum.current = requestAnimationFrame(animationLoop);
+    setIsDragging(true);
     el.setPointerCapture(e.pointerId);
-  };
-
-  const onDragStart = (e: React.DragEvent) => {
-    e.preventDefault();
-  };
-
-  const animationLoop = () => {
-    const el = scrollerRef.current;
-    if (!el) {
-      momentum.current = null;
-      return;
-    }
-    if (drag.current.active) {
-      const next = el.scrollLeft + (drag.current.targetScroll - el.scrollLeft) * 0.45;
-      el.scrollLeft = next;
-      momentum.current = requestAnimationFrame(animationLoop);
-    } else {
-      let v = drag.current.velocity * 16;
-      if (Math.abs(v) < 0.4) {
-        momentum.current = null;
-        return;
-      }
-      const step = () => {
-        v *= 0.92;
-        el.scrollLeft -= v;
-        if (Math.abs(v) > 0.4) {
-          momentum.current = requestAnimationFrame(step);
-        } else {
-          momentum.current = null;
-        }
-      };
-      momentum.current = requestAnimationFrame(step);
-    }
   };
 
   const onPointerMove = (e: React.PointerEvent<HTMLDivElement>) => {
     const el = scrollerRef.current;
-    if (!el || !drag.current.active) return;
+    if (!el || !drag.current.active || e.pointerId !== drag.current.pointerId) return;
     const dx = e.clientX - drag.current.startX;
-    if (Math.abs(dx) > 4) drag.current.moved = true;
+    if (Math.abs(dx) > 5) drag.current.moved = true;
     const now = performance.now();
     const dt = now - drag.current.lastT;
     if (dt > 0) {
       const inst = (e.clientX - drag.current.lastX) / dt;
-      drag.current.velocity = drag.current.velocity * 0.8 + inst * 0.2;
+      drag.current.velocity = drag.current.velocity * 0.7 + inst * 0.3;
     }
     drag.current.lastX = e.clientX;
     drag.current.lastT = now;
-    drag.current.targetScroll = drag.current.startScroll - dx;
+    el.scrollLeft = clampScroll(el, drag.current.startScroll - dx);
   };
 
   const endDrag = (e: React.PointerEvent<HTMLDivElement>) => {
     const el = scrollerRef.current;
+    if (!drag.current.active || e.pointerId !== drag.current.pointerId) return;
     if (el && el.hasPointerCapture(e.pointerId)) el.releasePointerCapture(e.pointerId);
     drag.current.active = false;
+    setIsDragging(false);
+
+    if (!el) return;
+    let v = drag.current.velocity * 16;
+    if (Math.abs(v) < 0.5) return;
+    const step = () => {
+      if (!scrollerRef.current) {
+        momentum.current = null;
+        return;
+      }
+      v *= 0.95;
+      const next = clampScroll(el, el.scrollLeft - v);
+      el.scrollLeft = next;
+      if (Math.abs(v) > 0.5 && next > 0 && next < el.scrollWidth - el.clientWidth) {
+        momentum.current = requestAnimationFrame(step);
+      } else {
+        momentum.current = null;
+      }
+    };
+    momentum.current = requestAnimationFrame(step);
   };
 
   const onCardClick = (e: React.MouseEvent) => {
     if (drag.current.moved) {
       e.preventDefault();
       e.stopPropagation();
+      drag.current.moved = false;
     }
   };
 
@@ -164,20 +159,29 @@ export const News = () => {
           onPointerMove={onPointerMove}
           onPointerUp={endDrag}
           onPointerCancel={endDrag}
-          onDragStart={onDragStart}
-          className="mt-14 flex snap-x snap-proximity gap-6 overflow-x-auto overscroll-x-contain pb-4 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden cursor-grab touch-pan-x select-none active:cursor-grabbing"
+          className={
+            "mt-14 flex snap-x snap-proximity gap-6 overflow-x-auto overscroll-x-contain pb-4 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden touch-pan-x select-none " +
+            (isDragging ? "cursor-grabbing" : "cursor-grab")
+          }
         >
           {newsItems.map((item, index) => (
             <article
               key={item.href ?? index}
               onClick={onCardClick}
-              className="group flex w-[26rem] shrink-0 snap-start flex-col overflow-hidden rounded-[2rem] border border-white/15 bg-white/10 shadow-soft backdrop-blur-md transition-smooth hover:-translate-y-1 hover:shadow-elegant sm:w-[34rem] md:w-[42rem]"
+              className="group flex w-[26rem] shrink-0 snap-start flex-col overflow-hidden rounded-[2rem] border border-white/15 shadow-soft backdrop-blur-md transition-smooth hover:-translate-y-1 hover:shadow-elegant sm:w-[34rem] md:w-[42rem]"
             >
               <button
                 type="button"
-                onClick={() => setActiveImage(item.image)}
+                onClick={(e) => {
+                  if (drag.current.moved) {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    return;
+                  }
+                  setActiveImage(item.image);
+                }}
                 aria-label={`Open news image ${item.index + 1}`}
-                className="relative block w-full overflow-hidden aspect-square"
+                className="news-image-container relative block w-full overflow-hidden"
               >
                 <img
                   src={item.image}
@@ -185,8 +189,7 @@ export const News = () => {
                   loading="lazy"
                   draggable={false}
                   className={
-                    "pointer-events-none block h-full w-full object-center transition-smooth group-hover:scale-105 " +
-                    "object-cover"
+                    "news-image pointer-events-none object-center transition-smooth group-hover:scale-105"
                   }
                 />
               </button>

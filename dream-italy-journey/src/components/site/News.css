@@ -1,0 +1,15 @@
+.news-image-container {
+  width: 100%;
+  height: 350px;
+  padding: 0;
+  margin: 0;
+  background-color: #ffffff;
+  overflow: hidden;
+}
+
+.news-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
